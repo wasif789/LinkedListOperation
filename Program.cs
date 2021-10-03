@@ -14,6 +14,8 @@ namespace LinkedListOperation
             Console.WriteLine("**********5.Delete the Last Element***********");
             Console.WriteLine("**********6.Searching the Element***********");
             Console.WriteLine("**********7.Searching and inserting the Element***********");
+            Console.WriteLine("**********8.Searching and deleting the Element***********");
+            Console.WriteLine("**********9.Sorting list***********");
             Console.WriteLine("Enter the option!!!");
             int num = Convert.ToInt32(Console.ReadLine());
             //Creating object for Custom Linked list class
@@ -72,6 +74,14 @@ namespace LinkedListOperation
                     obj.InsertLast(40);
                     obj.InsertLast(70);
                     obj.DeleteInBetween(40);
+                    obj.Display();
+                    break;
+                case 9:
+                    obj.InsertLast(56);
+                    obj.InsertLast(30);
+                    obj.InsertLast(40);
+                    obj.InsertLast(70);
+                    obj.Sort();
                     obj.Display();
                     break;
 
