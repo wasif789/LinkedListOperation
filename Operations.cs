@@ -23,6 +23,14 @@ namespace LinkedListOperation
             }
             Console.WriteLine("Inserted into list " + new_node.data);
         }
+        //Insert Front 
+        public void InsertFront(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            new_node.next = this.head;
+            this.head = new_node;
+            Console.WriteLine("Inserted the list in front " + new_node.data);
+        }
 
         public Node GetLastNode()
         {
