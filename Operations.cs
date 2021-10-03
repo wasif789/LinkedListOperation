@@ -66,6 +66,37 @@ namespace LinkedListOperation
 
             }
         }
+        public void InsertBetween(int pos, int new_data)
+        {
+            Node newNode = new Node(new_data);
+            if (pos == 1)
+            {
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else if (pos <= 0)
+            {
+                Console.WriteLine("Invalid Position!!!");
+            }
+            else if (pos > 0)
+            {
+                Node temp = head;
+                while (pos != 0)
+                {
+                    if (pos == 2)
+                    {
+                        Console.WriteLine(" insertion performed between tow nodes");
+                        newNode.next = temp.next;
+                        temp.next = newNode;
+                        break;
+                    }
+                    temp = temp.next;
+                    Console.WriteLine(pos);
+                    pos--;
+                }
+
+            }
+        }
         //Display the nodes
         public void Display()
         {
