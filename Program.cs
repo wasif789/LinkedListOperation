@@ -51,6 +51,12 @@ namespace LinkedListOperation
                     obj.DeleteLast();
                     obj.Display();
                     break;
+                case 6:
+                    obj.InsertLast(56);
+                    obj.InsertLast(30);
+                    obj.InsertLast(70);
+                    obj.Search(56);
+                    break;
 
 
             }
